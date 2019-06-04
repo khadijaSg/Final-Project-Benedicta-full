@@ -1,0 +1,181 @@
+C:\Users\pc\Desktop\New folder\Benedicta\Benedicta\bin\Benedicta.dll.config
+C:\Users\pc\Desktop\New folder\Benedicta\Benedicta\bin\Benedicta.dll
+C:\Users\pc\Desktop\New folder\Benedicta\Benedicta\bin\Benedicta.pdb
+C:\Users\pc\Desktop\New folder\Benedicta\Benedicta\bin\roslyn\csc.exe
+C:\Users\pc\Desktop\New folder\Benedicta\Benedicta\bin\roslyn\csc.exe.config
+C:\Users\pc\Desktop\New folder\Benedicta\Benedicta\bin\roslyn\csc.rsp
+C:\Users\pc\Desktop\New folder\Benedicta\Benedicta\bin\roslyn\csi.exe
+C:\Users\pc\Desktop\New folder\Benedicta\Benedicta\bin\roslyn\csi.exe.config
+C:\Users\pc\Desktop\New folder\Benedicta\Benedicta\bin\roslyn\csi.rsp
+C:\Users\pc\Desktop\New folder\Benedicta\Benedicta\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\pc\Desktop\New folder\Benedicta\Benedicta\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\pc\Desktop\New folder\Benedicta\Benedicta\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\pc\Desktop\New folder\Benedicta\Benedicta\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\pc\Desktop\New folder\Benedicta\Benedicta\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\pc\Desktop\New folder\Benedicta\Benedicta\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\pc\Desktop\New folder\Benedicta\Benedicta\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\pc\Desktop\New folder\Benedicta\Benedicta\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\pc\Desktop\New folder\Benedicta\Benedicta\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\pc\Desktop\New folder\Benedicta\Benedicta\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\pc\Desktop\New folder\Benedicta\Benedicta\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\pc\Desktop\New folder\Benedicta\Benedicta\bin\roslyn\System.AppContext.dll
+C:\Users\pc\Desktop\New folder\Benedicta\Benedicta\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\pc\Desktop\New folder\Benedicta\Benedicta\bin\roslyn\System.Console.dll
+C:\Users\pc\Desktop\New folder\Benedicta\Benedicta\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\pc\Desktop\New folder\Benedicta\Benedicta\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\pc\Desktop\New folder\Benedicta\Benedicta\bin\roslyn\System.IO.Compression.dll
+C:\Users\pc\Desktop\New folder\Benedicta\Benedicta\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\pc\Desktop\New folder\Benedicta\Benedicta\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\pc\Desktop\New folder\Benedicta\Benedicta\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\pc\Desktop\New folder\Benedicta\Benedicta\bin\roslyn\System.IO.Pipes.dll
+C:\Users\pc\Desktop\New folder\Benedicta\Benedicta\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\pc\Desktop\New folder\Benedicta\Benedicta\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\pc\Desktop\New folder\Benedicta\Benedicta\bin\roslyn\System.Security.Claims.dll
+C:\Users\pc\Desktop\New folder\Benedicta\Benedicta\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\pc\Desktop\New folder\Benedicta\Benedicta\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\pc\Desktop\New folder\Benedicta\Benedicta\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\pc\Desktop\New folder\Benedicta\Benedicta\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\pc\Desktop\New folder\Benedicta\Benedicta\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\pc\Desktop\New folder\Benedicta\Benedicta\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\pc\Desktop\New folder\Benedicta\Benedicta\bin\roslyn\System.ValueTuple.dll
+C:\Users\pc\Desktop\New folder\Benedicta\Benedicta\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\pc\Desktop\New folder\Benedicta\Benedicta\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\pc\Desktop\New folder\Benedicta\Benedicta\bin\roslyn\System.Xml.XPath.dll
+C:\Users\pc\Desktop\New folder\Benedicta\Benedicta\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\pc\Desktop\New folder\Benedicta\Benedicta\bin\roslyn\vbc.exe
+C:\Users\pc\Desktop\New folder\Benedicta\Benedicta\bin\roslyn\vbc.exe.config
+C:\Users\pc\Desktop\New folder\Benedicta\Benedicta\bin\roslyn\vbc.rsp
+C:\Users\pc\Desktop\New folder\Benedicta\Benedicta\bin\roslyn\VBCSCompiler.exe
+C:\Users\pc\Desktop\New folder\Benedicta\Benedicta\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\pc\Desktop\New folder\Benedicta\Benedicta\bin\Antlr3.Runtime.dll
+C:\Users\pc\Desktop\New folder\Benedicta\Benedicta\bin\EntityFramework.dll
+C:\Users\pc\Desktop\New folder\Benedicta\Benedicta\bin\EntityFramework.SqlServer.dll
+C:\Users\pc\Desktop\New folder\Benedicta\Benedicta\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Users\pc\Desktop\New folder\Benedicta\Benedicta\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\pc\Desktop\New folder\Benedicta\Benedicta\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\pc\Desktop\New folder\Benedicta\Benedicta\bin\Newtonsoft.Json.dll
+C:\Users\pc\Desktop\New folder\Benedicta\Benedicta\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\pc\Desktop\New folder\Benedicta\Benedicta\bin\System.Web.Helpers.dll
+C:\Users\pc\Desktop\New folder\Benedicta\Benedicta\bin\System.Web.Mvc.dll
+C:\Users\pc\Desktop\New folder\Benedicta\Benedicta\bin\System.Web.Optimization.dll
+C:\Users\pc\Desktop\New folder\Benedicta\Benedicta\bin\System.Web.Razor.dll
+C:\Users\pc\Desktop\New folder\Benedicta\Benedicta\bin\System.Web.WebPages.Deployment.dll
+C:\Users\pc\Desktop\New folder\Benedicta\Benedicta\bin\System.Web.WebPages.dll
+C:\Users\pc\Desktop\New folder\Benedicta\Benedicta\bin\System.Web.WebPages.Razor.dll
+C:\Users\pc\Desktop\New folder\Benedicta\Benedicta\bin\WebGrease.dll
+C:\Users\pc\Desktop\New folder\Benedicta\Benedicta\bin\EntityFramework.xml
+C:\Users\pc\Desktop\New folder\Benedicta\Benedicta\bin\EntityFramework.SqlServer.xml
+C:\Users\pc\Desktop\New folder\Benedicta\Benedicta\bin\System.Web.Helpers.xml
+C:\Users\pc\Desktop\New folder\Benedicta\Benedicta\bin\System.Web.Mvc.xml
+C:\Users\pc\Desktop\New folder\Benedicta\Benedicta\bin\System.Web.Optimization.xml
+C:\Users\pc\Desktop\New folder\Benedicta\Benedicta\bin\System.Web.Razor.xml
+C:\Users\pc\Desktop\New folder\Benedicta\Benedicta\bin\System.Web.WebPages.xml
+C:\Users\pc\Desktop\New folder\Benedicta\Benedicta\bin\System.Web.WebPages.Deployment.xml
+C:\Users\pc\Desktop\New folder\Benedicta\Benedicta\bin\System.Web.WebPages.Razor.xml
+C:\Users\pc\Desktop\New folder\Benedicta\Benedicta\bin\Newtonsoft.Json.xml
+C:\Users\pc\Desktop\New folder\Benedicta\Benedicta\bin\Antlr3.Runtime.pdb
+C:\Users\pc\Desktop\New folder\Benedicta\Benedicta\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\pc\Desktop\New folder\Benedicta\Benedicta\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Users\pc\Desktop\New folder\Benedicta\Benedicta\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\pc\Desktop\New folder\Benedicta\Benedicta\obj\Debug\Benedicta.csprojAssemblyReference.cache
+C:\Users\pc\Desktop\New folder\Benedicta\Benedicta\obj\Debug\Benedicta.csproj.CoreCompileInputs.cache
+C:\Users\pc\Desktop\New folder\Benedicta\Benedicta\obj\Debug\Benedicta.csproj.CopyComplete
+C:\Users\pc\Desktop\New folder\Benedicta\Benedicta\obj\Debug\Benedicta.dll
+C:\Users\pc\Desktop\New folder\Benedicta\Benedicta\obj\Debug\Benedicta.pdb
+C:\Users\pc\Desktop\New folder\Benedicta\Benedicta\obj\Debug\Benedicta.Migrations.CreateDatabase.resources
+C:\Users\pc\Desktop\New folder\Benedicta\Benedicta\obj\Debug\Benedicta.csproj.GenerateResource.cache
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\bin\Benedicta.dll.config
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\bin\Benedicta.dll
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\bin\Benedicta.pdb
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\bin\roslyn\csc.exe
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\bin\roslyn\csc.exe.config
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\bin\roslyn\csc.rsp
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\bin\roslyn\csi.exe
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\bin\roslyn\csi.exe.config
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\bin\roslyn\csi.rsp
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\bin\roslyn\System.AppContext.dll
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\bin\roslyn\System.Console.dll
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\bin\roslyn\System.IO.Compression.dll
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\bin\roslyn\System.IO.Pipes.dll
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\bin\roslyn\System.Security.Claims.dll
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\bin\roslyn\System.ValueTuple.dll
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\bin\roslyn\System.Xml.XPath.dll
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\bin\roslyn\vbc.exe
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\bin\roslyn\vbc.exe.config
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\bin\roslyn\vbc.rsp
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\bin\roslyn\VBCSCompiler.exe
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\bin\Antlr3.Runtime.dll
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\bin\EntityFramework.dll
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\bin\EntityFramework.SqlServer.dll
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\bin\Newtonsoft.Json.dll
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\bin\System.Web.Helpers.dll
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\bin\System.Web.Mvc.dll
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\bin\System.Web.Optimization.dll
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\bin\System.Web.Razor.dll
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\bin\System.Web.WebPages.Deployment.dll
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\bin\System.Web.WebPages.dll
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\bin\System.Web.WebPages.Razor.dll
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\bin\WebGrease.dll
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\bin\EntityFramework.xml
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\bin\EntityFramework.SqlServer.xml
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\bin\System.Web.Helpers.xml
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\bin\System.Web.Mvc.xml
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\bin\System.Web.Optimization.xml
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\bin\System.Web.Razor.xml
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\bin\System.Web.WebPages.xml
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\bin\System.Web.WebPages.Deployment.xml
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\bin\System.Web.WebPages.Razor.xml
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\bin\Newtonsoft.Json.xml
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\bin\Antlr3.Runtime.pdb
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\obj\Debug\Benedicta.csprojAssemblyReference.cache
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\obj\Debug\Benedicta.csproj.CoreCompileInputs.cache
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\obj\Debug\Benedicta.csproj.CopyComplete
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\obj\Debug\Benedicta.dll
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\obj\Debug\Benedicta.pdb
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\obj\Debug\Benedicta.Migrations.CreateDatabase.resources
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\obj\Debug\Benedicta.csproj.GenerateResource.cache
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\obj\Debug\Benedicta.Migrations.UpdateDatabase.resources
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\obj\Debug\Benedicta.Migrations.UpdateDatabase1.resources
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\obj\Debug\Benedicta.Migrations.AddedReserveTableBg.resources
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\obj\Debug\Benedicta.Migrations.DeletedTable.resources
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\obj\Debug\Benedicta.Migrations.AddedProperty.resources
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\obj\Debug\Benedicta.Migrations.AddedAboutInfo.resources
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\obj\Debug\Benedicta.Migrations.AddedNewsOffersTable.resources
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\obj\Debug\Benedicta.Migrations.DeletedNewsOffers.resources
+C:\Users\afiqi\Desktop\Benedicta-Restaurant-master\Benedicta\Benedicta\obj\Debug\Benedicta.Migrations.AddedMenuTables.resources

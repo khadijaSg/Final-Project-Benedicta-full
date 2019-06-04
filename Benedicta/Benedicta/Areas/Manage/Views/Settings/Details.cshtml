@@ -1,0 +1,75 @@
+﻿@model Benedicta.Models.Setting
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Manage/Views/Shared/_LayoutManage.cshtml";
+}
+
+<h2 style="text-align:center; margin-top:75px;">Details</h2>
+
+<div>
+    <h4 style="text-align:center; margin-top:10px;">Setting</h4>
+    <hr />
+    <dl class="dl-horizontal col-lg-6 " style="margin:0 auto;">
+        <dt>
+            @Html.DisplayNameFor(model => model.Logo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Logo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Facebook)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Facebook)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Instagram)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Instagram)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Phone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Phone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NavbarPhoto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NavbarPhoto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Adress)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Adress)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Map)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Map)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

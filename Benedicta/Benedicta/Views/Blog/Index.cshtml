@@ -1,0 +1,62 @@
+﻿
+
+@model Benedicta.Models.AddView
+
+@{
+    ViewBag.Title = "Benedicta";
+}
+
+@foreach (var item in Model.Settings)
+{
+    <section id="NewsBg"  style="background-image: url(../../Uploads/@item.NavbarPhoto);">
+        <div class="container-fluid">
+            <div class="row text-center" style="margin-top:200px;">
+                <div class="col-12 mb-3">
+                    <h1>News & Offers</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+}
+<!-- NEWS&OFFERS SECTION STARTS -->
+<section id="News">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="NewsOffers1">News & Offers</h2>
+                <h1 class="NewsOffers2">What’s new?</h1>
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+
+            @foreach (var item in Model.News)
+            {
+                <div class="col-lg-4">
+                    <div class="card">
+                        <img src="../../Uploads/@item.Photo" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <small class="text-muted">@item.DateTime</small>
+                            <a href="">
+                                <h5 class="card-title">@item.Title</h5>
+                            </a>
+                            <p class="card-text">
+                                @item.Text
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            @foreach (var item2 in Model.Users)
+                            {
+                                <small class="text-muted">
+                                    <i class="fas fa-user-tie" style="margin-right:7px;"></i> @item2.Name
+                                </small>
+                            }
+                        </div>
+                    </div>
+                </div>
+            }
+
+        </div>
+    </div>
+</section>
+<!-- NEWS&OFFERS SECTION ENDS -->

@@ -1,0 +1,303 @@
+﻿
+@model Benedicta.Models.AddView
+
+@{
+    ViewBag.Title = "Benedicta";
+}
+
+
+@foreach (var item in Model.Welcomes)
+{
+    <section id="HeaderBg" style="background-image: url(../../Uploads/@item.Photo);">
+        <div class="container-fluid">
+
+            <div class="row text-center" style="margin-top:100px;">
+                <div class="col-12 mb-5">
+                    <h4>@item.Word</h4>
+                    <hr class="divider divider-lg bg-mantis align-items-center">
+                </div>
+                <div class="col-12 mb-3">
+                    <h1>@item.Title</h1>
+                </div>
+                <div class="col-12">
+                    <p>@item.Text</p>
+                </div>
+            </div>
+        </div>
+    </section>
+}
+
+<!-- SEC1 STARTS -->
+<section id="SecOne">
+    <div class="container">
+        <div class="row">
+
+            @foreach (var item in Model.Services)
+            {
+                <div class="col-lg-4   text-center">
+                    <div class="row">
+                        <div class="col-12"><img src="../../Uploads/@item.Photo"></div>
+                        <div class="col-12 mt-4">
+                            <h4>@item.Title</h4>
+                        </div>
+                        <div class="col-12 mt-4">
+                            <p style="font-size:18px;" class="sec1Parag">
+                                @item.Text
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            }
+
+        </div>
+    </div>
+</section>
+<!-- SEC1 ENDS -->
+<!-- MENU UPDATE SECTION STARTS -->
+<section id="MenuUpdate">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                @foreach (var item in Model.MenuUpdates)
+                {
+                    <div class="item" style=" background-image: url(../../Uploads/@item.Photo);">
+                        <h2>@item.Title</h2>
+                        <span>@item.Text</span>
+                        <hr>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</section>
+<!-- MENU UPDATE SECTION ENDS -->
+<!-- MENU SECTION STARTS -->
+<section id="menu">
+    <div class="container">
+        <div class="row">
+
+            @foreach (var item in Model.Menus)
+            {
+                <div class="col-lg-4">
+                    <div class="item">
+                        <div class="imgDiv">
+                            <img src="../../Uploads/@item.Photo" alt="">
+                        </div>
+                        <div class="contentDiv">
+                            <h5 class="menu_item_title" style="color:#ffffff;">
+                                @item.Name<i class="line"
+                                             style="border-color:#ffffff;"></i>
+                            </h5>
+                            <h3 style="color:white">-----------------------</h3>
+                            <p class="menu_item_ingredients" style="color:rgba(255,255,255,0.9);">
+                                @item.Ingredients
+                            </p><span class="menu_item_price" style="color:#ef343a;">
+                                @item.Price.ToString("#.##")
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            }
+
+        </div>
+        <div class="row">
+            <div class="col-lg-12 itemBtn">
+                <button class=" showAllMenu" style="margin-top:45px; margin-bottom:30px;">SHOW FULL MENU</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- MENU SECTION ENDS -->
+<!-- RESERVE SECTION STARTS -->
+
+
+
+@foreach (var item in Model.ReserveTableBgs)
+{
+    <section id="Reserve" style=" background-image: url(../../Uploads/@item.Photo);">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="row">
+
+                        @foreach (var item1 in Model.Settings)
+                        {
+
+                            <div class="col-lg-12">
+                                <h4 class="phone">@item1.Phone</h4>
+                                <h1>Reserve a Table</h1>
+                                <hr class="ReserveHr">
+                            </div>
+                        }
+
+
+                    </div>
+                    <div class="row">
+
+                        @foreach (var item2 in Model.Properties)
+                        {
+                            <div class="col-lg-6 text-center">
+                                <img src="../../Uploads/@item2.Photo">
+                                <h4>@item2.Title</h4>
+                                <p>@item2.Text</p>
+                            </div>
+                        }
+
+                    </div>
+                </div>
+
+
+                <div class="col-lg-6">
+                    <div class="reserveForm">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-md-4">
+                                    <label for="inputEmail4">Name*</label>
+                                    <input type="Name" class="form-control" id="inputEmail4">
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="inputPassword4">Email*</label>
+                                    <input type="text" class="form-control" id="inputPassword4">
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="inputPassword4">Phone*</label>
+                                    <input type="text" class="form-control" id="inputPassword4">
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="inputAddress">Date*</label>
+                                    <input type="date" class="form-control" id="inputAddress">
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="inputState">Time*</label>
+                                    <select id="inputState" class="form-control">
+                                        <option selected>Choose...</option>
+                                        <option>...</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="inputAddress">Seats*</label>
+                                    <input type="number" min="1" class="form-control" id="inputAddress">
+                                </div>
+                                <div class="form-group col-md-12">
+                                    <label for="exampleFormControlTextarea2">Special Requests*</label>
+                                    <textarea class="form-control rounded-0" id="exampleFormControlTextarea2"
+                                              rows="5"></textarea>
+                                </div>
+                            </div>
+
+                            <button type="submit" style="margin: 0 auto;display:block" class="showAllMenu">
+                                Book
+                                Now
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+}
+<!-- RESERVE SECTION ENDS -->
+<!-- ABOUT SECTION STARTS -->
+<section id="About">
+    <div class="container">
+        @foreach (var item in Model.Abouts)
+        {
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h2>@item.Word</h2>
+                            <h1>@item.Word2</h1>
+                            <hr class="AboutHr">
+                            <p>
+                                @item.Text
+                            </p>
+                            <div class="col-lg-12 itemBtn">
+                                <button class="readMore">READ MORE</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="imgDivs">
+                        <div class="row">
+                            <div class="col-lg-6 col-6">
+                                <div class="imgDivLeft">
+                                    <img src="../../Uploads/@item.Photo" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</section>
+<!-- ABOUT SECTION ENDS -->
+<!-- TEA SECTION STARTS -->
+@foreach (var item in Model.Teas)
+{
+    <section id="Tea" style=" background-image: url(../../Uploads/@item.Photo);">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="tasteOfMood">@item.Text</h2>
+                    <h1>@item.Title</h1>
+                    <hr>
+                    <div class="col-lg-12 itemBtn">
+                        <button class="chooseTea">Choose Tea</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+}
+<!-- TEA SECTION ENDS  -->
+<!-- NEWS&OFFERS SECTION STARTS -->
+<section id="News">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="NewsOffers1">News & Offers</h2>
+                <h1 class="NewsOffers2">What’s new?</h1>
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+
+            @foreach (var item in Model.News)
+            {
+                <div class="col-lg-4">
+                    <div class="card">
+                        <img src="../../Uploads/@item.Photo" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <small class="text-muted">@item.DateTime</small>
+                            <a href="@Url.Action("Index", "Blog")">
+                                <h5 class="card-title">@item.Title</h5>
+                            </a>
+                            <p class="card-text">
+                                @item.Text
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            @foreach (var item2 in Model.Users)
+                            {
+                                <small class="text-muted">
+                                    <i class="fas fa-user-tie" style="margin-right:7px;"></i> @item2.Name
+                                </small>
+                            }
+                        </div>
+                    </div>
+                </div>
+            }
+
+        </div>
+    </div>
+</section>
+<!-- NEWS&OFFERS SECTION ENDS -->

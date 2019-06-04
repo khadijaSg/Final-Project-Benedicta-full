@@ -1,0 +1,734 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{20B78B68-722D-499A-B3B7-E797A1042E56}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Benedicta</RootNamespace>
+    <AssemblyName>Benedicta</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TypeScriptToolsVersion>3.3</TypeScriptToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.4.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.4\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.4\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Diagnostics.DiagnosticSource">
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.4.4.1\lib\net46\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.TelemetryCorrelation">
+      <HintPath>..\packages\Microsoft.AspNet.TelemetryCorrelation.1.0.0\lib\net45\Microsoft.AspNet.TelemetryCorrelation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Areas\Manage\Controllers\AboutInfoesController.cs" />
+    <Compile Include="Areas\Manage\Controllers\AboutsController.cs" />
+    <Compile Include="Areas\Manage\Controllers\ContactFormsController.cs" />
+    <Compile Include="Areas\Manage\Controllers\ContactsController.cs" />
+    <Compile Include="Areas\Manage\Controllers\DashboardController.cs" />
+    <Compile Include="Areas\Manage\Controllers\LoginController.cs" />
+    <Compile Include="Areas\Manage\Controllers\MenusController.cs" />
+    <Compile Include="Areas\Manage\Controllers\MenuT1Controller.cs" />
+    <Compile Include="Areas\Manage\Controllers\MenuT2Controller.cs" />
+    <Compile Include="Areas\Manage\Controllers\MenuUpdatesController.cs" />
+    <Compile Include="Areas\Manage\Controllers\NewsController.cs" />
+    <Compile Include="Areas\Manage\Controllers\PropertiesController.cs" />
+    <Compile Include="Areas\Manage\Controllers\ReserveTableBgsController.cs" />
+    <Compile Include="Areas\Manage\Controllers\ReserveTablesController.cs" />
+    <Compile Include="Areas\Manage\Controllers\ServicesController.cs" />
+    <Compile Include="Areas\Manage\Controllers\SettingsController.cs" />
+    <Compile Include="Areas\Manage\Controllers\SlidersController.cs" />
+    <Compile Include="Areas\Manage\Controllers\TeasController.cs" />
+    <Compile Include="Areas\Manage\Controllers\UsersController.cs" />
+    <Compile Include="Areas\Manage\Controllers\WelcomesController.cs" />
+    <Compile Include="Areas\Manage\ManageAreaRegistration.cs" />
+    <Compile Include="Controllers\AboutController.cs" />
+    <Compile Include="Controllers\BlogController.cs" />
+    <Compile Include="Controllers\Card1Controller.cs" />
+    <Compile Include="Controllers\ContactController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\MenuController.cs" />
+    <Compile Include="Controllers\ReservationController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905071534529_CreateDatabase.cs" />
+    <Compile Include="Migrations\201905071534529_CreateDatabase.Designer.cs">
+      <DependentUpon>201905071534529_CreateDatabase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905081105306_UpdateDatabase.cs" />
+    <Compile Include="Migrations\201905081105306_UpdateDatabase.Designer.cs">
+      <DependentUpon>201905081105306_UpdateDatabase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905130900180_UpdateDatabase1.cs" />
+    <Compile Include="Migrations\201905130900180_UpdateDatabase1.Designer.cs">
+      <DependentUpon>201905130900180_UpdateDatabase1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905141257149_AddedReserveTableBg.cs" />
+    <Compile Include="Migrations\201905141257149_AddedReserveTableBg.Designer.cs">
+      <DependentUpon>201905141257149_AddedReserveTableBg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905142040197_DeletedTable.cs" />
+    <Compile Include="Migrations\201905142040197_DeletedTable.Designer.cs">
+      <DependentUpon>201905142040197_DeletedTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905150631240_AddedProperty.cs" />
+    <Compile Include="Migrations\201905150631240_AddedProperty.Designer.cs">
+      <DependentUpon>201905150631240_AddedProperty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905150648198_AddedAboutInfo.cs" />
+    <Compile Include="Migrations\201905150648198_AddedAboutInfo.Designer.cs">
+      <DependentUpon>201905150648198_AddedAboutInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905150828521_AddedNewsOffersTable.cs" />
+    <Compile Include="Migrations\201905150828521_AddedNewsOffersTable.Designer.cs">
+      <DependentUpon>201905150828521_AddedNewsOffersTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905151459366_DeletedNewsOffers.cs" />
+    <Compile Include="Migrations\201905151459366_DeletedNewsOffers.Designer.cs">
+      <DependentUpon>201905151459366_DeletedNewsOffers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905170645451_AddedMenuTables.cs" />
+    <Compile Include="Migrations\201905170645451_AddedMenuTables.Designer.cs">
+      <DependentUpon>201905170645451_AddedMenuTables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\About.cs" />
+    <Compile Include="Models\AboutInfo.cs" />
+    <Compile Include="Models\AddView.cs" />
+    <Compile Include="Models\BenedictaContext.cs" />
+    <Compile Include="Models\Contact.cs" />
+    <Compile Include="Models\ContactForm.cs" />
+    <Compile Include="Models\Menu.cs" />
+    <Compile Include="Models\MenuT1.cs" />
+    <Compile Include="Models\MenuT2.cs" />
+    <Compile Include="Models\MenuUpdate.cs" />
+    <Compile Include="Models\News.cs" />
+    <Compile Include="Models\Property.cs" />
+    <Compile Include="Models\ReserveTable.cs" />
+    <Compile Include="Models\ReserveTableBg.cs" />
+    <Compile Include="Models\Service.cs" />
+    <Compile Include="Models\Setting.cs" />
+    <Compile Include="Models\Slider.cs" />
+    <Compile Include="Models\Tea.cs" />
+    <Compile Include="Models\User.cs" />
+    <Compile Include="Models\Welcome.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Manage\PublicManage\css\font-face.css" />
+    <Content Include="Areas\Manage\PublicManage\css\theme.css" />
+    <Content Include="Areas\Manage\PublicManage\fonts\poppins\poppins-v5-latin-100.svg" />
+    <Content Include="Areas\Manage\PublicManage\fonts\poppins\poppins-v5-latin-100italic.svg" />
+    <Content Include="Areas\Manage\PublicManage\fonts\poppins\poppins-v5-latin-200.svg" />
+    <Content Include="Areas\Manage\PublicManage\fonts\poppins\poppins-v5-latin-200italic.svg" />
+    <Content Include="Areas\Manage\PublicManage\fonts\poppins\poppins-v5-latin-300.svg" />
+    <Content Include="Areas\Manage\PublicManage\fonts\poppins\poppins-v5-latin-300italic.svg" />
+    <Content Include="Areas\Manage\PublicManage\fonts\poppins\poppins-v5-latin-500.svg" />
+    <Content Include="Areas\Manage\PublicManage\fonts\poppins\poppins-v5-latin-500italic.svg" />
+    <Content Include="Areas\Manage\PublicManage\fonts\poppins\poppins-v5-latin-600.svg" />
+    <Content Include="Areas\Manage\PublicManage\fonts\poppins\poppins-v5-latin-600italic.svg" />
+    <Content Include="Areas\Manage\PublicManage\fonts\poppins\poppins-v5-latin-700.svg" />
+    <Content Include="Areas\Manage\PublicManage\fonts\poppins\poppins-v5-latin-700italic.svg" />
+    <Content Include="Areas\Manage\PublicManage\fonts\poppins\poppins-v5-latin-800.svg" />
+    <Content Include="Areas\Manage\PublicManage\fonts\poppins\poppins-v5-latin-800italic.svg" />
+    <Content Include="Areas\Manage\PublicManage\fonts\poppins\poppins-v5-latin-900.svg" />
+    <Content Include="Areas\Manage\PublicManage\fonts\poppins\poppins-v5-latin-900italic.svg" />
+    <Content Include="Areas\Manage\PublicManage\fonts\poppins\poppins-v5-latin-italic.svg" />
+    <Content Include="Areas\Manage\PublicManage\fonts\poppins\poppins-v5-latin-regular.svg" />
+    <Content Include="Areas\Manage\PublicManage\images\bg-title-01.jpg" />
+    <Content Include="Areas\Manage\PublicManage\images\bg-title-02.jpg" />
+    <Content Include="Areas\Manage\PublicManage\images\icon\avatar-01.jpg" />
+    <Content Include="Areas\Manage\PublicManage\images\icon\avatar-02.jpg" />
+    <Content Include="Areas\Manage\PublicManage\images\icon\avatar-03.jpg" />
+    <Content Include="Areas\Manage\PublicManage\images\icon\avatar-04.jpg" />
+    <Content Include="Areas\Manage\PublicManage\images\icon\avatar-05.jpg" />
+    <Content Include="Areas\Manage\PublicManage\images\icon\avatar-06.jpg" />
+    <Content Include="Areas\Manage\PublicManage\images\icon\avatar-big-01.jpg" />
+    <Content Include="Areas\Manage\PublicManage\images\icon\logo-blue.png" />
+    <Content Include="Areas\Manage\PublicManage\images\icon\logo-mini.png" />
+    <Content Include="Areas\Manage\PublicManage\images\icon\logo-white.png" />
+    <Content Include="Areas\Manage\PublicManage\images\icon\logo.png" />
+    <Content Include="Areas\Manage\PublicManage\images\icon\Untitled-1.jpg" />
+    <Content Include="Areas\Manage\PublicManage\js\main.js" />
+    <Content Include="Areas\Manage\PublicManage\vendor\animsition\animsition.min.css" />
+    <Content Include="Areas\Manage\PublicManage\vendor\animsition\animsition.min.js" />
+    <Content Include="Areas\Manage\PublicManage\vendor\bootstrap-4.1\bootstrap.min.css" />
+    <Content Include="Areas\Manage\PublicManage\vendor\bootstrap-4.1\bootstrap.min.js" />
+    <Content Include="Areas\Manage\PublicManage\vendor\bootstrap-4.1\popper.min.js" />
+    <Content Include="Areas\Manage\PublicManage\vendor\bootstrap-progressbar\bootstrap-progressbar-3.3.4.min.css" />
+    <Content Include="Areas\Manage\PublicManage\vendor\bootstrap-progressbar\bootstrap-progressbar.min.js" />
+    <Content Include="Areas\Manage\PublicManage\vendor\chartjs\Chart.bundle.min.js" />
+    <Content Include="Areas\Manage\PublicManage\vendor\circle-progress\circle-progress.js" />
+    <Content Include="Areas\Manage\PublicManage\vendor\circle-progress\circle-progress.min.js" />
+    <Content Include="Areas\Manage\PublicManage\vendor\countdown\countdowntime.js" />
+    <Content Include="Areas\Manage\PublicManage\vendor\countdown\jquery.countdown.min.js" />
+    <Content Include="Areas\Manage\PublicManage\vendor\countdown\moment-timezone-with-data.min.js" />
+    <Content Include="Areas\Manage\PublicManage\vendor\countdown\moment-timezone.min.js" />
+    <Content Include="Areas\Manage\PublicManage\vendor\countdown\moment.min.js" />
+    <Content Include="Areas\Manage\PublicManage\vendor\counter-up\jquery.counterup.min.js" />
+    <Content Include="Areas\Manage\PublicManage\vendor\counter-up\jquery.waypoints.min.js" />
+    <Content Include="Areas\Manage\PublicManage\vendor\counter-up\waypoints.min.js" />
+    <Content Include="Areas\Manage\PublicManage\vendor\css-hamburgers\hamburgers.css" />
+    <Content Include="Areas\Manage\PublicManage\vendor\css-hamburgers\hamburgers.min.css" />
+    <Content Include="Areas\Manage\PublicManage\vendor\font-awesome-4.7\css\font-awesome.css" />
+    <Content Include="Areas\Manage\PublicManage\vendor\font-awesome-4.7\css\font-awesome.min.css" />
+    <Content Include="Areas\Manage\PublicManage\vendor\font-awesome-4.7\fonts\fontawesome-webfont.svg" />
+    <Content Include="Areas\Manage\PublicManage\vendor\font-awesome-4.7\HELP-US-OUT.txt" />
+    <Content Include="Areas\Manage\PublicManage\vendor\font-awesome-5\css\fontawesome-all.min.css" />
+    <Content Include="Areas\Manage\PublicManage\vendor\font-awesome-5\webfonts\fa-brands-400.svg" />
+    <Content Include="Areas\Manage\PublicManage\vendor\font-awesome-5\webfonts\fa-regular-400.svg" />
+    <Content Include="Areas\Manage\PublicManage\vendor\font-awesome-5\webfonts\fa-solid-900.svg" />
+    <Content Include="Areas\Manage\PublicManage\vendor\jquery-3.2.1.min.js" />
+    <Content Include="Areas\Manage\PublicManage\vendor\jquery-ui.min.js" />
+    <Content Include="Areas\Manage\PublicManage\vendor\lightbox2\dist\css\lightbox.css" />
+    <Content Include="Areas\Manage\PublicManage\vendor\lightbox2\dist\images\close.png" />
+    <Content Include="Areas\Manage\PublicManage\vendor\lightbox2\dist\images\loading.gif" />
+    <Content Include="Areas\Manage\PublicManage\vendor\lightbox2\dist\images\next.png" />
+    <Content Include="Areas\Manage\PublicManage\vendor\lightbox2\dist\images\prev.png" />
+    <Content Include="Areas\Manage\PublicManage\vendor\lightbox2\dist\js\lightbox-plus-jquery.js" />
+    <Content Include="Areas\Manage\PublicManage\vendor\lightbox2\dist\js\lightbox-plus-jquery.min.js" />
+    <Content Include="Areas\Manage\PublicManage\vendor\lightbox2\dist\js\lightbox.js" />
+    <Content Include="Areas\Manage\PublicManage\vendor\lightbox2\dist\js\lightbox.min.js" />
+    <Content Include="Areas\Manage\PublicManage\vendor\lightbox2\src\css\lightbox.css" />
+    <Content Include="Areas\Manage\PublicManage\vendor\lightbox2\src\images\close.png" />
+    <Content Include="Areas\Manage\PublicManage\vendor\lightbox2\src\images\loading.gif" />
+    <Content Include="Areas\Manage\PublicManage\vendor\lightbox2\src\images\next.png" />
+    <Content Include="Areas\Manage\PublicManage\vendor\lightbox2\src\images\prev.png" />
+    <Content Include="Areas\Manage\PublicManage\vendor\lightbox2\src\js\lightbox.js" />
+    <Content Include="Areas\Manage\PublicManage\vendor\mdi-font\css\material-design-iconic-font.css" />
+    <Content Include="Areas\Manage\PublicManage\vendor\mdi-font\css\material-design-iconic-font.min.css" />
+    <Content Include="Areas\Manage\PublicManage\vendor\mdi-font\fonts\Material-Design-Iconic-Font.svg" />
+    <Content Include="Areas\Manage\PublicManage\vendor\perfect-scrollbar\perfect-scrollbar.css" />
+    <Content Include="Areas\Manage\PublicManage\vendor\perfect-scrollbar\perfect-scrollbar.js" />
+    <Content Include="Areas\Manage\PublicManage\vendor\perfect-scrollbar\perfect-scrollbar.min.js" />
+    <Content Include="Areas\Manage\PublicManage\vendor\progressbar\progressbar.js" />
+    <Content Include="Areas\Manage\PublicManage\vendor\progressbar\progressbar.min.js" />
+    <Content Include="Areas\Manage\PublicManage\vendor\select2\select2.min.css" />
+    <Content Include="Areas\Manage\PublicManage\vendor\select2\select2.min.js" />
+    <Content Include="Areas\Manage\PublicManage\vendor\slick\ajax-loader.gif" />
+    <Content Include="Areas\Manage\PublicManage\vendor\slick\fonts\slick.svg" />
+    <Content Include="Areas\Manage\PublicManage\vendor\slick\slick-theme.css" />
+    <Content Include="Areas\Manage\PublicManage\vendor\slick\slick.css" />
+    <Content Include="Areas\Manage\PublicManage\vendor\slick\slick.js" />
+    <Content Include="Areas\Manage\PublicManage\vendor\slick\slick.min.js" />
+    <Content Include="Areas\Manage\PublicManage\vendor\smk-accordion\accordion.css" />
+    <Content Include="Areas\Manage\PublicManage\vendor\smk-accordion\accordion.js" />
+    <Content Include="Areas\Manage\PublicManage\vendor\smk-accordion\accordion.min.js" />
+    <Content Include="Areas\Manage\PublicManage\vendor\sweetalert\sweetalert.min.js" />
+    <Content Include="Areas\Manage\PublicManage\vendor\vector-map\jquery.vmap.brazil.js" />
+    <Content Include="Areas\Manage\PublicManage\vendor\vector-map\jquery.vmap.europe.js" />
+    <Content Include="Areas\Manage\PublicManage\vendor\vector-map\jquery.vmap.france.js" />
+    <Content Include="Areas\Manage\PublicManage\vendor\vector-map\jquery.vmap.germany.js" />
+    <Content Include="Areas\Manage\PublicManage\vendor\vector-map\jquery.vmap.js" />
+    <Content Include="Areas\Manage\PublicManage\vendor\vector-map\jquery.vmap.min.js" />
+    <Content Include="Areas\Manage\PublicManage\vendor\vector-map\jquery.vmap.russia.js" />
+    <Content Include="Areas\Manage\PublicManage\vendor\vector-map\jquery.vmap.sampledata.js" />
+    <Content Include="Areas\Manage\PublicManage\vendor\vector-map\jquery.vmap.usa.js" />
+    <Content Include="Areas\Manage\PublicManage\vendor\vector-map\jquery.vmap.world.js" />
+    <Content Include="Areas\Manage\PublicManage\vendor\vector-map\jqvmap.min.css" />
+    <Content Include="Areas\Manage\PublicManage\vendor\wow\animate.css" />
+    <Content Include="Areas\Manage\PublicManage\vendor\wow\wow.min.js" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="Public\css\style.css" />
+    <Content Include="Public\img\about-img1.jpg" />
+    <Content Include="Public\img\Author.jpeg" />
+    <Content Include="Public\img\blog-img1-370x270.jpg" />
+    <Content Include="Public\img\blog-img2-370x270.jpg" />
+    <Content Include="Public\img\blog-img3.jpg" />
+    <Content Include="Public\img\blog-img4.jpg" />
+    <Content Include="Public\img\blog-img5.jpg" />
+    <Content Include="Public\img\contact-img.jpg" />
+    <Content Include="Public\img\gallery1.jpg" />
+    <Content Include="Public\img\gallery2.jpg" />
+    <Content Include="Public\img\gallery3.jpg" />
+    <Content Include="Public\img\gallery4.jpg" />
+    <Content Include="Public\img\gallery5.jpg" />
+    <Content Include="Public\img\gallery6.jpg" />
+    <Content Include="Public\img\header-bg1.jpg" />
+    <Content Include="Public\img\header-home-bg.jpg" />
+    <Content Include="Public\img\home-about1.jpg" />
+    <Content Include="Public\img\home-about2.jpg" />
+    <Content Include="Public\img\icons8-rice-bowl-100.png" />
+    <Content Include="Public\img\icons8-service-bell-100.png" />
+    <Content Include="Public\img\icons8-sofa-100 %281%29.png" />
+    <Content Include="Public\img\menu-icon1.png" />
+    <Content Include="Public\img\menu-icon2.png" />
+    <Content Include="Public\img\menu-icon4.png" />
+    <Content Include="Public\img\menu-img1.jpg" />
+    <Content Include="Public\img\menu-img10.jpg" />
+    <Content Include="Public\img\menu-img11.jpg" />
+    <Content Include="Public\img\menu-img12.jpg" />
+    <Content Include="Public\img\menu-img2.jpg" />
+    <Content Include="Public\img\menu-img3.jpg" />
+    <Content Include="Public\img\menu-img4.jpg" />
+    <Content Include="Public\img\menu-img5.jpg" />
+    <Content Include="Public\img\menu-img6.jpg" />
+    <Content Include="Public\img\menu-img7.jpg" />
+    <Content Include="Public\img\menu-img8.jpg" />
+    <Content Include="Public\img\menu-img9.jpg" />
+    <Content Include="Public\img\slider-bg1.jpg" />
+    <Content Include="Public\img\slider-bg2.jpg" />
+    <Content Include="Public\img\slider-bg3.jpg" />
+    <Content Include="Public\img\slider-bg4.jpg" />
+    <Content Include="Public\img\slider-bg5.jpg" />
+    <Content Include="Public\img\v-07-512.png" />
+    <Content Include="Public\js\benedicta.js" />
+    <Content Include="Uploads\about-img1.jpg" />
+    <Content Include="Uploads\Author.jpeg" />
+    <Content Include="Uploads\blog-img1-370x270.jpg" />
+    <Content Include="Uploads\blog-img2-370x270.jpg" />
+    <Content Include="Uploads\blog-img3.jpg" />
+    <Content Include="Uploads\blog-img4.jpg" />
+    <Content Include="Uploads\blog-img5.jpg" />
+    <Content Include="Uploads\contact-img.jpg" />
+    <Content Include="Uploads\gallery1.jpg" />
+    <Content Include="Uploads\gallery2.jpg" />
+    <Content Include="Uploads\gallery3.jpg" />
+    <Content Include="Uploads\gallery4.jpg" />
+    <Content Include="Uploads\gallery5.jpg" />
+    <Content Include="Uploads\gallery6.jpg" />
+    <Content Include="Uploads\header-bg1.jpg" />
+    <Content Include="Uploads\header-home-bg.jpg" />
+    <Content Include="Uploads\home-about1.jpg" />
+    <Content Include="Uploads\home-about2.jpg" />
+    <Content Include="Uploads\icons8-rice-bowl-100.png" />
+    <Content Include="Uploads\icons8-service-bell-100.png" />
+    <Content Include="Uploads\icons8-sofa-100 %281%29.png" />
+    <Content Include="Uploads\menu-icon1.png" />
+    <Content Include="Uploads\menu-icon2.png" />
+    <Content Include="Uploads\menu-icon4.png" />
+    <Content Include="Uploads\menu-img1.jpg" />
+    <Content Include="Uploads\menu-img10.jpg" />
+    <Content Include="Uploads\menu-img11.jpg" />
+    <Content Include="Uploads\menu-img12.jpg" />
+    <Content Include="Uploads\menu-img2.jpg" />
+    <Content Include="Uploads\menu-img3.jpg" />
+    <Content Include="Uploads\menu-img4.jpg" />
+    <Content Include="Uploads\menu-img5.jpg" />
+    <Content Include="Uploads\menu-img6.jpg" />
+    <Content Include="Uploads\menu-img7.jpg" />
+    <Content Include="Uploads\menu-img8.jpg" />
+    <Content Include="Uploads\menu-img9.jpg" />
+    <Content Include="Uploads\slider-bg1.jpg" />
+    <Content Include="Uploads\slider-bg2.jpg" />
+    <Content Include="Uploads\slider-bg3.jpg" />
+    <Content Include="Uploads\slider-bg4.jpg" />
+    <Content Include="Uploads\slider-bg5.jpg" />
+    <Content Include="Uploads\v-07-512.png" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Areas\Manage\Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Manage\Views\web.config" />
+    <Content Include="Areas\Manage\Views\Shared\_LayoutManage.cshtml" />
+    <Content Include="Areas\Manage\Views\Users\Create.cshtml" />
+    <Content Include="Areas\Manage\Views\Users\Delete.cshtml" />
+    <Content Include="Areas\Manage\Views\Users\Details.cshtml" />
+    <Content Include="Areas\Manage\Views\Users\Edit.cshtml" />
+    <Content Include="Areas\Manage\Views\Users\Index.cshtml" />
+    <Content Include="Areas\Manage\Views\ContactForms\Create.cshtml" />
+    <Content Include="Areas\Manage\Views\ContactForms\Delete.cshtml" />
+    <Content Include="Areas\Manage\Views\ContactForms\Details.cshtml" />
+    <Content Include="Areas\Manage\Views\ContactForms\Edit.cshtml" />
+    <Content Include="Areas\Manage\Views\ContactForms\Index.cshtml" />
+    <Content Include="Areas\Manage\Views\ReserveTables\Create.cshtml" />
+    <Content Include="Areas\Manage\Views\ReserveTables\Delete.cshtml" />
+    <Content Include="Areas\Manage\Views\ReserveTables\Details.cshtml" />
+    <Content Include="Areas\Manage\Views\ReserveTables\Edit.cshtml" />
+    <Content Include="Areas\Manage\Views\ReserveTables\Index.cshtml" />
+    <Content Include="Areas\Manage\Views\Services\Create.cshtml" />
+    <Content Include="Areas\Manage\Views\Services\Delete.cshtml" />
+    <Content Include="Areas\Manage\Views\Services\Details.cshtml" />
+    <Content Include="Areas\Manage\Views\Services\Edit.cshtml" />
+    <Content Include="Areas\Manage\Views\Services\Index.cshtml" />
+    <Content Include="Areas\Manage\Views\MenuUpdates\Create.cshtml" />
+    <Content Include="Areas\Manage\Views\MenuUpdates\Delete.cshtml" />
+    <Content Include="Areas\Manage\Views\MenuUpdates\Details.cshtml" />
+    <Content Include="Areas\Manage\Views\MenuUpdates\Edit.cshtml" />
+    <Content Include="Areas\Manage\Views\MenuUpdates\Index.cshtml" />
+    <Content Include="Areas\Manage\Views\Contacts\Create.cshtml" />
+    <Content Include="Areas\Manage\Views\Contacts\Delete.cshtml" />
+    <Content Include="Areas\Manage\Views\Contacts\Details.cshtml" />
+    <Content Include="Areas\Manage\Views\Contacts\Edit.cshtml" />
+    <Content Include="Areas\Manage\Views\Contacts\Index.cshtml" />
+    <Content Include="Areas\Manage\Views\News\Create.cshtml" />
+    <Content Include="Areas\Manage\Views\News\Delete.cshtml" />
+    <Content Include="Areas\Manage\Views\News\Details.cshtml" />
+    <Content Include="Areas\Manage\Views\News\Edit.cshtml" />
+    <Content Include="Areas\Manage\Views\News\Index.cshtml" />
+    <Content Include="Areas\Manage\Views\Properties\Create.cshtml" />
+    <Content Include="Areas\Manage\Views\Properties\Delete.cshtml" />
+    <Content Include="Areas\Manage\Views\Properties\Details.cshtml" />
+    <Content Include="Areas\Manage\Views\Properties\Edit.cshtml" />
+    <Content Include="Areas\Manage\Views\Properties\Index.cshtml" />
+    <Content Include="Areas\Manage\Views\Settings\Create.cshtml" />
+    <Content Include="Areas\Manage\Views\Settings\Delete.cshtml" />
+    <Content Include="Areas\Manage\Views\Settings\Details.cshtml" />
+    <Content Include="Areas\Manage\Views\Settings\Edit.cshtml" />
+    <Content Include="Areas\Manage\Views\Settings\Index.cshtml" />
+    <Content Include="Areas\Manage\Views\Sliders\Create.cshtml" />
+    <Content Include="Areas\Manage\Views\Sliders\Delete.cshtml" />
+    <Content Include="Areas\Manage\Views\Sliders\Details.cshtml" />
+    <Content Include="Areas\Manage\Views\Sliders\Edit.cshtml" />
+    <Content Include="Areas\Manage\Views\Sliders\Index.cshtml" />
+    <Content Include="Areas\Manage\Views\Teas\Create.cshtml" />
+    <Content Include="Areas\Manage\Views\Teas\Delete.cshtml" />
+    <Content Include="Areas\Manage\Views\Teas\Details.cshtml" />
+    <Content Include="Areas\Manage\Views\Teas\Edit.cshtml" />
+    <Content Include="Areas\Manage\Views\Teas\Index.cshtml" />
+    <Content Include="Areas\Manage\Views\Welcomes\Create.cshtml" />
+    <Content Include="Areas\Manage\Views\Welcomes\Delete.cshtml" />
+    <Content Include="Areas\Manage\Views\Welcomes\Details.cshtml" />
+    <Content Include="Areas\Manage\Views\Welcomes\Edit.cshtml" />
+    <Content Include="Areas\Manage\Views\Welcomes\Index.cshtml" />
+    <Content Include="Areas\Manage\PublicManage\fonts\poppins\poppins-v5-latin-100.eot" />
+    <Content Include="Areas\Manage\PublicManage\fonts\poppins\poppins-v5-latin-100.ttf" />
+    <Content Include="Areas\Manage\PublicManage\fonts\poppins\poppins-v5-latin-100.woff" />
+    <Content Include="Areas\Manage\PublicManage\fonts\poppins\poppins-v5-latin-100.woff2" />
+    <Content Include="Areas\Manage\PublicManage\fonts\poppins\poppins-v5-latin-100italic.eot" />
+    <Content Include="Areas\Manage\PublicManage\fonts\poppins\poppins-v5-latin-100italic.ttf" />
+    <Content Include="Areas\Manage\PublicManage\fonts\poppins\poppins-v5-latin-100italic.woff" />
+    <Content Include="Areas\Manage\PublicManage\fonts\poppins\poppins-v5-latin-100italic.woff2" />
+    <Content Include="Areas\Manage\PublicManage\fonts\poppins\poppins-v5-latin-200.eot" />
+    <Content Include="Areas\Manage\PublicManage\fonts\poppins\poppins-v5-latin-200.ttf" />
+    <Content Include="Areas\Manage\PublicManage\fonts\poppins\poppins-v5-latin-200.woff" />
+    <Content Include="Areas\Manage\PublicManage\fonts\poppins\poppins-v5-latin-200.woff2" />
+    <Content Include="Areas\Manage\PublicManage\fonts\poppins\poppins-v5-latin-200italic.eot" />
+    <Content Include="Areas\Manage\PublicManage\fonts\poppins\poppins-v5-latin-200italic.ttf" />
+    <Content Include="Areas\Manage\PublicManage\fonts\poppins\poppins-v5-latin-200italic.woff" />
+    <Content Include="Areas\Manage\PublicManage\fonts\poppins\poppins-v5-latin-200italic.woff2" />
+    <Content Include="Areas\Manage\PublicManage\fonts\poppins\poppins-v5-latin-300.eot" />
+    <Content Include="Areas\Manage\PublicManage\fonts\poppins\poppins-v5-latin-300.ttf" />
+    <Content Include="Areas\Manage\PublicManage\fonts\poppins\poppins-v5-latin-300.woff" />
+    <Content Include="Areas\Manage\PublicManage\fonts\poppins\poppins-v5-latin-300.woff2" />
+    <Content Include="Areas\Manage\PublicManage\fonts\poppins\poppins-v5-latin-300italic.eot" />
+    <Content Include="Areas\Manage\PublicManage\fonts\poppins\poppins-v5-latin-300italic.ttf" />
+    <Content Include="Areas\Manage\PublicManage\fonts\poppins\poppins-v5-latin-300italic.woff" />
+    <Content Include="Areas\Manage\PublicManage\fonts\poppins\poppins-v5-latin-300italic.woff2" />
+    <Content Include="Areas\Manage\PublicManage\fonts\poppins\poppins-v5-latin-500.eot" />
+    <Content Include="Areas\Manage\PublicManage\fonts\poppins\poppins-v5-latin-500.ttf" />
+    <Content Include="Areas\Manage\PublicManage\fonts\poppins\poppins-v5-latin-500.woff" />
+    <Content Include="Areas\Manage\PublicManage\fonts\poppins\poppins-v5-latin-500.woff2" />
+    <Content Include="Areas\Manage\PublicManage\fonts\poppins\poppins-v5-latin-500italic.eot" />
+    <Content Include="Areas\Manage\PublicManage\fonts\poppins\poppins-v5-latin-500italic.ttf" />
+    <Content Include="Areas\Manage\PublicManage\fonts\poppins\poppins-v5-latin-500italic.woff" />
+    <Content Include="Areas\Manage\PublicManage\fonts\poppins\poppins-v5-latin-500italic.woff2" />
+    <Content Include="Areas\Manage\PublicManage\fonts\poppins\poppins-v5-latin-600.eot" />
+    <Content Include="Areas\Manage\PublicManage\fonts\poppins\poppins-v5-latin-600.ttf" />
+    <Content Include="Areas\Manage\PublicManage\fonts\poppins\poppins-v5-latin-600.woff" />
+    <Content Include="Areas\Manage\PublicManage\fonts\poppins\poppins-v5-latin-600.woff2" />
+    <Content Include="Areas\Manage\PublicManage\fonts\poppins\poppins-v5-latin-600italic.eot" />
+    <Content Include="Areas\Manage\PublicManage\fonts\poppins\poppins-v5-latin-600italic.ttf" />
+    <Content Include="Areas\Manage\PublicManage\fonts\poppins\poppins-v5-latin-600italic.woff" />
+    <Content Include="Areas\Manage\PublicManage\fonts\poppins\poppins-v5-latin-600italic.woff2" />
+    <Content Include="Areas\Manage\PublicManage\fonts\poppins\poppins-v5-latin-700.eot" />
+    <Content Include="Areas\Manage\PublicManage\fonts\poppins\poppins-v5-latin-700.ttf" />
+    <Content Include="Areas\Manage\PublicManage\fonts\poppins\poppins-v5-latin-700.woff" />
+    <Content Include="Areas\Manage\PublicManage\fonts\poppins\poppins-v5-latin-700.woff2" />
+    <Content Include="Areas\Manage\PublicManage\fonts\poppins\poppins-v5-latin-700italic.eot" />
+    <Content Include="Areas\Manage\PublicManage\fonts\poppins\poppins-v5-latin-700italic.ttf" />
+    <Content Include="Areas\Manage\PublicManage\fonts\poppins\poppins-v5-latin-700italic.woff" />
+    <Content Include="Areas\Manage\PublicManage\fonts\poppins\poppins-v5-latin-700italic.woff2" />
+    <Content Include="Areas\Manage\PublicManage\fonts\poppins\poppins-v5-latin-800.eot" />
+    <Content Include="Areas\Manage\PublicManage\fonts\poppins\poppins-v5-latin-800.ttf" />
+    <Content Include="Areas\Manage\PublicManage\fonts\poppins\poppins-v5-latin-800.woff" />
+    <Content Include="Areas\Manage\PublicManage\fonts\poppins\poppins-v5-latin-800.woff2" />
+    <Content Include="Areas\Manage\PublicManage\fonts\poppins\poppins-v5-latin-800italic.eot" />
+    <Content Include="Areas\Manage\PublicManage\fonts\poppins\poppins-v5-latin-800italic.ttf" />
+    <Content Include="Areas\Manage\PublicManage\fonts\poppins\poppins-v5-latin-800italic.woff" />
+    <Content Include="Areas\Manage\PublicManage\fonts\poppins\poppins-v5-latin-800italic.woff2" />
+    <Content Include="Areas\Manage\PublicManage\fonts\poppins\poppins-v5-latin-900.eot" />
+    <Content Include="Areas\Manage\PublicManage\fonts\poppins\poppins-v5-latin-900.ttf" />
+    <Content Include="Areas\Manage\PublicManage\fonts\poppins\poppins-v5-latin-900.woff" />
+    <Content Include="Areas\Manage\PublicManage\fonts\poppins\poppins-v5-latin-900.woff2" />
+    <Content Include="Areas\Manage\PublicManage\fonts\poppins\poppins-v5-latin-900italic.eot" />
+    <Content Include="Areas\Manage\PublicManage\fonts\poppins\poppins-v5-latin-900italic.ttf" />
+    <Content Include="Areas\Manage\PublicManage\fonts\poppins\poppins-v5-latin-900italic.woff" />
+    <Content Include="Areas\Manage\PublicManage\fonts\poppins\poppins-v5-latin-900italic.woff2" />
+    <Content Include="Areas\Manage\PublicManage\fonts\poppins\poppins-v5-latin-italic.eot" />
+    <Content Include="Areas\Manage\PublicManage\fonts\poppins\poppins-v5-latin-italic.ttf" />
+    <Content Include="Areas\Manage\PublicManage\fonts\poppins\poppins-v5-latin-italic.woff" />
+    <Content Include="Areas\Manage\PublicManage\fonts\poppins\poppins-v5-latin-italic.woff2" />
+    <Content Include="Areas\Manage\PublicManage\fonts\poppins\poppins-v5-latin-regular.eot" />
+    <Content Include="Areas\Manage\PublicManage\fonts\poppins\poppins-v5-latin-regular.ttf" />
+    <Content Include="Areas\Manage\PublicManage\fonts\poppins\poppins-v5-latin-regular.woff" />
+    <Content Include="Areas\Manage\PublicManage\fonts\poppins\poppins-v5-latin-regular.woff2" />
+    <Content Include="Areas\Manage\PublicManage\vendor\font-awesome-4.7\fonts\fontawesome-webfont.eot" />
+    <Content Include="Areas\Manage\PublicManage\vendor\font-awesome-4.7\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Areas\Manage\PublicManage\vendor\font-awesome-4.7\fonts\fontawesome-webfont.woff" />
+    <Content Include="Areas\Manage\PublicManage\vendor\font-awesome-4.7\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Areas\Manage\PublicManage\vendor\font-awesome-4.7\fonts\FontAwesome.otf" />
+    <Content Include="Areas\Manage\PublicManage\vendor\font-awesome-5\webfonts\fa-brands-400.eot" />
+    <Content Include="Areas\Manage\PublicManage\vendor\font-awesome-5\webfonts\fa-brands-400.ttf" />
+    <Content Include="Areas\Manage\PublicManage\vendor\font-awesome-5\webfonts\fa-brands-400.woff" />
+    <Content Include="Areas\Manage\PublicManage\vendor\font-awesome-5\webfonts\fa-brands-400.woff2" />
+    <Content Include="Areas\Manage\PublicManage\vendor\font-awesome-5\webfonts\fa-regular-400.eot" />
+    <Content Include="Areas\Manage\PublicManage\vendor\font-awesome-5\webfonts\fa-regular-400.ttf" />
+    <Content Include="Areas\Manage\PublicManage\vendor\font-awesome-5\webfonts\fa-regular-400.woff" />
+    <Content Include="Areas\Manage\PublicManage\vendor\font-awesome-5\webfonts\fa-regular-400.woff2" />
+    <Content Include="Areas\Manage\PublicManage\vendor\font-awesome-5\webfonts\fa-solid-900.eot" />
+    <Content Include="Areas\Manage\PublicManage\vendor\font-awesome-5\webfonts\fa-solid-900.ttf" />
+    <Content Include="Areas\Manage\PublicManage\vendor\font-awesome-5\webfonts\fa-solid-900.woff" />
+    <Content Include="Areas\Manage\PublicManage\vendor\font-awesome-5\webfonts\fa-solid-900.woff2" />
+    <Content Include="Areas\Manage\PublicManage\vendor\lightbox2\dist\js\lightbox-plus-jquery.min.map" />
+    <Content Include="Areas\Manage\PublicManage\vendor\lightbox2\dist\js\lightbox.min.map" />
+    <Content Include="Areas\Manage\PublicManage\vendor\mdi-font\fonts\Material-Design-Iconic-Font.eot" />
+    <Content Include="Areas\Manage\PublicManage\vendor\mdi-font\fonts\Material-Design-Iconic-Font.ttf" />
+    <Content Include="Areas\Manage\PublicManage\vendor\mdi-font\fonts\Material-Design-Iconic-Font.woff" />
+    <Content Include="Areas\Manage\PublicManage\vendor\mdi-font\fonts\Material-Design-Iconic-Font.woff2" />
+    <Content Include="Areas\Manage\PublicManage\vendor\slick\config.rb" />
+    <Content Include="Areas\Manage\PublicManage\vendor\slick\fonts\slick.eot" />
+    <Content Include="Areas\Manage\PublicManage\vendor\slick\fonts\slick.ttf" />
+    <Content Include="Areas\Manage\PublicManage\vendor\slick\fonts\slick.woff" />
+    <Content Include="Areas\Manage\PublicManage\vendor\slick\slick-theme.less" />
+    <Content Include="Areas\Manage\PublicManage\vendor\slick\slick-theme.scss" />
+    <Content Include="Areas\Manage\PublicManage\vendor\slick\slick.less" />
+    <Content Include="Areas\Manage\PublicManage\vendor\slick\slick.scss" />
+    <Content Include="Areas\Manage\Views\Menus\Create.cshtml" />
+    <Content Include="Areas\Manage\Views\Menus\Delete.cshtml" />
+    <Content Include="Areas\Manage\Views\Menus\Details.cshtml" />
+    <Content Include="Areas\Manage\Views\Menus\Edit.cshtml" />
+    <Content Include="Areas\Manage\Views\Menus\Index.cshtml" />
+    <Content Include="Areas\Manage\Views\ReserveTableBgs\Create.cshtml" />
+    <Content Include="Areas\Manage\Views\ReserveTableBgs\Delete.cshtml" />
+    <Content Include="Areas\Manage\Views\ReserveTableBgs\Details.cshtml" />
+    <Content Include="Areas\Manage\Views\ReserveTableBgs\Edit.cshtml" />
+    <Content Include="Areas\Manage\Views\ReserveTableBgs\Index.cshtml" />
+    <Content Include="Areas\Manage\Views\Abouts\Create.cshtml" />
+    <Content Include="Areas\Manage\Views\Abouts\Delete.cshtml" />
+    <Content Include="Areas\Manage\Views\Abouts\Details.cshtml" />
+    <Content Include="Areas\Manage\Views\Abouts\Edit.cshtml" />
+    <Content Include="Areas\Manage\Views\Abouts\Index.cshtml" />
+    <Content Include="Areas\Manage\Views\AboutInfoes\Create.cshtml" />
+    <Content Include="Areas\Manage\Views\AboutInfoes\Delete.cshtml" />
+    <Content Include="Areas\Manage\Views\AboutInfoes\Details.cshtml" />
+    <Content Include="Areas\Manage\Views\AboutInfoes\Edit.cshtml" />
+    <Content Include="Areas\Manage\Views\AboutInfoes\Index.cshtml" />
+    <Content Include="Areas\Manage\Views\MenuT1\Create.cshtml" />
+    <Content Include="Areas\Manage\Views\MenuT1\Delete.cshtml" />
+    <Content Include="Areas\Manage\Views\MenuT1\Details.cshtml" />
+    <Content Include="Areas\Manage\Views\MenuT1\Edit.cshtml" />
+    <Content Include="Areas\Manage\Views\MenuT1\Index.cshtml" />
+    <Content Include="Areas\Manage\Views\MenuT2\Create.cshtml" />
+    <Content Include="Areas\Manage\Views\MenuT2\Delete.cshtml" />
+    <Content Include="Areas\Manage\Views\MenuT2\Details.cshtml" />
+    <Content Include="Areas\Manage\Views\MenuT2\Edit.cshtml" />
+    <Content Include="Areas\Manage\Views\MenuT2\Index.cshtml" />
+    <Content Include="Areas\Manage\Views\Login\Index.cshtml" />
+    <Content Include="Areas\Manage\Views\Dashboard\Index.cshtml" />
+    <None Include="packages.config" />
+    <Content Include="Public\img\Thumbs.db" />
+    <Content Include="Views\Menu\Index.cshtml" />
+    <Content Include="Views\About\Index.cshtml" />
+    <Content Include="Views\Reservation\Index.cshtml" />
+    <Content Include="Views\Contact\Index.cshtml" />
+    <Content Include="Views\Blog\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201905071534529_CreateDatabase.resx">
+      <DependentUpon>201905071534529_CreateDatabase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905081105306_UpdateDatabase.resx">
+      <DependentUpon>201905081105306_UpdateDatabase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905130900180_UpdateDatabase1.resx">
+      <DependentUpon>201905130900180_UpdateDatabase1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905141257149_AddedReserveTableBg.resx">
+      <DependentUpon>201905141257149_AddedReserveTableBg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905142040197_DeletedTable.resx">
+      <DependentUpon>201905142040197_DeletedTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905150631240_AddedProperty.resx">
+      <DependentUpon>201905150631240_AddedProperty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905150648198_AddedAboutInfo.resx">
+      <DependentUpon>201905150648198_AddedAboutInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905150828521_AddedNewsOffersTable.resx">
+      <DependentUpon>201905150828521_AddedNewsOffersTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905151459366_DeletedNewsOffers.resx">
+      <DependentUpon>201905151459366_DeletedNewsOffers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905170645451_AddedMenuTables.resx">
+      <DependentUpon>201905170645451_AddedMenuTables.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>62698</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:62698/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

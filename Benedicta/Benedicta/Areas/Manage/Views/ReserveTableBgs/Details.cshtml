@@ -1,0 +1,27 @@
+﻿@model Benedicta.Models.ReserveTableBg
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Manage/Views/Shared/_LayoutManage.cshtml";
+}
+
+<h2 style="text-align:center; margin-top:75px;">Details</h2>
+
+<div>
+    <h4  style="text-align:center; margin-top:10px;">ReserveTableBg</h4>
+    <hr />
+    <dl class="dl-horizontal col-lg-6 " style="margin:0 auto;">
+        <dt>
+            @Html.DisplayNameFor(model => model.Photo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Photo)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

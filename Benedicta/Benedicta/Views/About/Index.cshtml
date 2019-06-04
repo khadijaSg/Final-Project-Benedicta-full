@@ -1,0 +1,104 @@
+﻿
+@model Benedicta.Models.AddView
+
+@{
+    ViewBag.Title = "Benedicta";
+}
+
+@foreach (var item in Model.Settings)
+{
+    <section id="AboutBg" style="background-image: url(../../Uploads/@item.NavbarPhoto);">
+        <div class="row text-center" style="margin-top:200px; margin-right: 0px !important;">
+            <div class="col-12 mb-3">
+                <h1>About</h1>
+            </div>
+        </div>
+    </section>
+}
+
+<!-- SECTION ONE STARTS -->
+<section id="Section1">
+    <div class="container">
+        <div class="row">
+            @foreach (var item in Model.AboutInfos)
+            {
+                <div class="col-lg-4">
+                    <h5 style="margin-top:80px; margin-bottom: 80px">
+                        @item.Title
+                    </h5>
+                </div>
+                <div class="col-lg-4">
+                    <p style="margin-top:80px; margin-bottom: 80px">
+                        @item.Text
+                    </p>
+                </div>
+                <div class="col-lg-4"><img style="margin-top:80px; margin-bottom: 80px" src="../../Uploads/@item.Photo"></div>
+            }
+        </div>
+    </div>
+</section>
+<!-- SECTION ONE ENDS -->
+<!-- CUSTOM SECTION STARTS -->
+<section id="Custom">
+    <div class="container">
+        <div class="row">
+            @foreach (var item in Model.Properties)
+            {
+                <div class="col-lg-4 text-center">
+                    <img src="../../Uploads/@item.Photo">
+                    <h5>@item.Title</h5>
+                    <p>@item.Text</p>
+                </div>
+            }
+        </div>
+    </div>
+</section>
+<!-- CUSTOM SECTION ENDS -->
+<!-- GALLERY SECTION STARTS -->
+<section id="Gallery" style="padding-bottom:70px;">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="row">
+                    <div class="w3-content w3-display-container">
+
+
+                        @for (int i = 0; i < Model.Sliders.Count(); i++)
+                        {
+                            <img class="mySlides" src="../../Uploads/@Model.Sliders.ElementAt(i).Photo" style="width:100%">
+                        }
+
+                        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- GALLERY SECTION ENDS -->
+<!-- RESERVE SECTION STARTS -->
+@foreach (var item in Model.ReserveTableBgs)
+{
+    <section id="Reserve2" style="background-image: url(../../Uploads/@item.Photo);">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+
+                    @foreach (var item2 in Model.Settings)
+                    {
+                        <h4 class="phone2">@item2.Phone</h4>
+
+                    }
+
+                    <h1 class="ReserveTitle2">Reserve a Table</h1>
+                    <hr class="ReserveHr2">
+                    <div class="col-lg-12 itemBtn">
+                        <button class=" showAllMenu2">Choose Tea</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+}
+<!-- RESERVE SECTION ENDS -->

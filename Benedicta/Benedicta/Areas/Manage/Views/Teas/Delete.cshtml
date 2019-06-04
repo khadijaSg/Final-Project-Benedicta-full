@@ -1,0 +1,49 @@
+﻿@model Benedicta.Models.Tea
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Areas/Manage/Views/Shared/_LayoutManage.cshtml";
+}
+
+<h2 style="text-align:center; margin-top:75px;">Delete</h2>
+
+<h3 style="text-align:center; margin-top:20px;"> Are you sure that you want to delete this?</h3>
+<div>
+    <h4 style="text-align:center; margin-top:10px;">Tea</h4>
+    <hr />
+    <dl class="dl-horizontal col-lg-6 " style="margin:0 auto;">
+        <dt>
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Text)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Text)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Photo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Photo)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm(new { @enctype = "multipart/form-data", @style = "margin:0 auto;", @class = "col-md-6"  })) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color" style="text-align:center">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

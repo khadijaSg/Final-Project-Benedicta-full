@@ -1,0 +1,129 @@
+﻿
+@model Benedicta.Models.AddView
+
+@{
+    ViewBag.Title = "Benedicta";
+}
+
+@foreach (var item in Model.Settings)
+{
+    <section id="MenuBg"  style="background-image: url(../../Uploads/@item.NavbarPhoto);">
+        <div class="container-fluid">
+            <div class="row text-center" style="margin-top:200px;">
+                <div class="col-12 mb-3">
+                    <h1>Menu</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+}
+
+<!-- LOOK AT SECTION STARTS -->
+<section id="LookAt">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h3>Look at our full menu in it there will definitely find something tasty for you.</h3>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- LOOK AT SECTION ENDS -->
+<!-- NEMAS SECTION STARTS -->
+
+@foreach (var item in Model.MenuT1)
+{
+    <section id="Nemas" style="background-image: url(../../Uploads/@item.Photo);">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h5>@item.Title</h5>
+                    <p>@item.Text</p>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </section>
+}
+
+<!-- NEMAS SECTION ENDS -->
+<!-- MENU SECTION STARTS -->
+<section id="menu">
+    <div class="container">
+        <div class="row">
+            @foreach (var item in Model.Menus)
+            {
+                <div class="col-lg-4">
+                    <div class="item">
+                        <div class="imgDiv">
+                            <img src="../../Uploads/@item.Photo" alt="">
+                        </div>
+                        <div class="contentDiv">
+                            <h5 class="menu_item_title" style="color:#ffffff;">
+                                @item.Name<i class="line"
+                                             style="border-color:#ffffff;"></i>
+                            </h5>
+                            <h3 style="color:white">-----------------------</h3>
+                            <p class="menu_item_ingredients" style="color:rgba(255,255,255,0.9);">
+                                @item.Ingredients
+                            </p><span class="menu_item_price" style="color:#ef343a;">
+                                @item.Price.ToString("#.##")
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            }
+
+        </div>
+    </div>
+</section>
+<!-- MENU SECTION ENDS -->
+<!-- ROLLS SECTION STARTS -->
+
+@foreach (var item in Model.MenuT2)
+{
+    <section id="Rolls" style="background-image: url(../../Uploads/@item.Photo);">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h5>@item.Title</h5>
+                    <p>@item.Text</p>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </section>
+}
+
+<!-- ROLLS SECTION ENDS -->
+<!-- MENU SECTION STARTS -->
+<section id="menu">
+    <div class="container">
+        <div class="row">
+            @foreach (var item in Model.Menus)
+            {
+                <div class="col-lg-4">
+                    <div class="item">
+                        <div class="imgDiv">
+                            <img src="../../Uploads/@item.Photo" alt="">
+                        </div>
+                        <div class="contentDiv">
+                            <h5 class="menu_item_title" style="color:#ffffff;">
+                                @item.Name<i class="line"
+                                             style="border-color:#ffffff;"></i>
+                            </h5>
+                            <h3 style="color:white">-----------------------</h3>
+                            <p class="menu_item_ingredients" style="color:rgba(255,255,255,0.9);">
+                                @item.Ingredients
+                            </p><span class="menu_item_price" style="color:#ef343a;">
+                                @item.Price.ToString("#.##")
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            }
+
+        </div>
+    </div>
+</section>
+<!-- MENU SECTION ENDS -->

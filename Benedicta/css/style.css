@@ -1,0 +1,915 @@
+@media only screen and (max-width: 600px) {
+    header .col-12 h1 {
+        font-size: 35px !important;
+    }
+    #menu .item .contentDiv{
+        opacity: 0;
+    }
+    #About .imgDivs{
+        margin-top: 0 !important;
+    }
+    #About .imgDivLeft{
+        margin-bottom: 50px;
+    }
+    #Reserve .text-center p {
+        margin-bottom: 0px !important;
+    }
+    #Reserve {
+        padding: 30px 0px;
+    }
+    #Reserve h1{
+        font-size: 2.5rem !important;
+    }
+    #MenuUpdate span{
+        font-size:1rem !important;
+        margin-bottom: 20px;
+    }
+    #Tea h1{
+        font-size: 2.5rem !important;
+    }
+    #News .card{
+        margin-bottom: 20px !important;
+    }
+    header .text-center{
+        margin-top: 100px !important;
+    }
+    #Section1 h5{
+        margin: 40px 0px !important;
+        text-align: center;
+    }
+    #Section1 p{
+        margin: 40px 0px !important;
+        text-align: center;
+    }
+    #Section1 img{
+        width: 100%;
+        margin: 40px 0px !important;
+    }
+    #Reserve2  h1{
+        font-size: 2.5rem !important;
+    }
+    #ReserveTable h1{
+        font-size:2.5rem !important;
+    }
+    .mapouter{
+        width: 100% !important;
+    }
+    .gmap_canvas{
+        width: 100% !important;
+    }
+    .mapouter iframe{
+        width: 100% !important;
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: auto;
+}
+
+a{
+    color: black;
+}
+a:hover{
+    text-decoration: none;
+    color: black;
+}
+h1, h3, h5, p,span{
+    font-family: 'Open Sans';
+}
+
+h4,h2{
+    font-family: 'Amatic SC';
+    font-size: 55px;
+    color: black;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* HEADER STARTS */
+
+
+header{
+    width: 100%;
+    background-image: url('http://benedicta.evatheme.com/demo5/wp-content/uploads/2018/10/slider-bg1.jpg');
+    background-size: cover;
+}
+.nav-link{
+    color:white !important;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.collapse li a{
+    font-family: Open Sans;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 28px;
+    font-size: 11px;
+    color: #fff;
+    letter-spacing: 1px;
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 23px 20px !important;
+    transition: 0.3s linear;
+}
+
+.collapse li a:hover{
+color: red !important;
+}
+
+.collapse li a i{
+    font-size: 1.4em;
+}
+.navbar-light .navbar-toggler {
+    color: rgba(0,0,0,.5);
+    background: wheat;
+    border-color: rgba(0,0,0,.1);
+}
+
+header .col-12 h4{
+    color: white;
+    text-transform: uppercase;
+    font-size: 50px;
+    position: relative;
+    z-index: 2;
+}
+.navbar{
+    height: 60px;
+}
+header .col-12 h1 {
+    font-size: 75px;
+    color: white;
+    font-weight: 400;
+}
+
+header .col-12 p {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 182px;
+}
+
+header hr{
+    width: 12%;
+    height: 24px;
+    background-color: rgb(239, 52, 58);
+    visibility: inherit;
+    margin:0 auto;
+    position: relative;
+    z-index: 1;
+    bottom: 40%;
+}
+/* HEADER ENDS */
+
+
+/* SEC. ONE STARTS */
+#SecOne{
+    padding: 30px;
+    background: white;
+}
+#SecOne .col-lg-4 img{
+   width: 100%;
+}
+#SecOne .col-12 .sec1Parag{
+    color: black;
+}
+/* SEC. ONE ENDS */
+
+/* MENU UPDATE SECTION STARTS */
+#MenuUpdate{
+    padding: 30px;
+}
+#MenuUpdate .item{
+    background-image: url(../img/header-home-bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 50px;
+}
+#MenuUpdate span{
+   display: inherit;
+   color: white;
+   font-size: 50px;
+   text-align: center;
+   position: relative;
+}
+#MenuUpdate h2{
+    color :white;
+}
+#MenuUpdate hr{
+    background: black;
+    width: 35px;
+    height: 1px;
+    margin: 0 auto;
+ }
+ /* MENU UPDATE SECTION ENDS */
+
+ /* NAVBAR TOGGLER STARTS */
+.navbar-toggler{
+    background: rgb(239, 52, 58) !important
+}
+ /* NAVBAR TOGGLER ENDS */
+
+ /* MENU SECTION STARTS */
+#menu .imgDiv img{
+    width: 100%;
+}
+#menu .item{
+    cursor: pointer;
+    position: relative; 
+    margin-top: 30px;
+}
+#menu .item .contentDiv{
+    transition: 0.4s all ease;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.664);
+    width: 100%;
+    position: absolute;
+    top:0;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 40px;
+
+}
+#menu .item:hover .contentDiv{
+    transition: 0.4s all ease;
+    opacity: 1;
+}
+#menu .item .contentDiv h5{
+    margin-top: 50px;
+    text-align: center;
+}
+#menu .item .contentDiv *{
+    text-align: center;
+}
+#menu .menu_item_price{
+text-align: center;
+display: inherit;
+}
+#menu{
+    padding: 30px;
+}
+.showAllMenu{
+    border: none;
+    transition: 0.5s all ease;
+    padding: 12px 30px;
+    margin-top: 20px;
+    background: black;
+    color: white;
+}
+#menu .itemBtn{
+    font-family: 'Open Sans';
+    transition: 0.5s all ease;
+    display: flex;
+    justify-content: space-around;
+}
+.showAllMenu:hover{
+   background-color: rgb(239, 52, 58);
+   transition: 0.5s all ease;
+}
+ /* MENU SECTION ENDS */
+
+
+ /* RESERVE SECTION STARTS */
+ #Reserve{
+    background-image: url(../img/slider-bg2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#Reserve .col-lg-12 h4,h1{
+    color: white;
+    text-align: center;
+}
+#Reserve  .col-lg-12 .phone{
+    margin-top: 140px;
+    font-size: 40px;
+}
+#Reserve .col-lg-6 .col-lg-12 h1{
+    font-size: 65px;
+}
+#Reserve .col-lg-12 .ReserveHr{
+    background: red;
+    width: 50px;
+    height: 1px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+#Reserve .col-lg-6 img{
+    margin: 0 auto;
+    display: block;
+    margin-top: 45px;
+    width: 50px;
+}
+#Reserve .col-lg-6 h4,p{
+    color: white;
+}
+#Reserve .col-lg-6 h4{
+    font-size: 40px;
+    margin-top: 15px;
+}
+#Reserve .col-lg-6 p{
+    font-size: 15px;
+    margin-top: 15px;
+    margin-bottom: 140px;
+}
+#Reserve .reserveForm{
+    background-color: whitesmoke;
+    margin-top: 50px;
+    padding: 80px 40px;
+}
+
+ /* RESERVE SECTION ENDS */
+
+ /* ABOUT SECTION STARTS */
+ #About .readMore{
+    border: none;
+    transition: 0.5s all ease;
+    padding: 12px 30px;
+    margin-top: 20px;
+    background: black;
+    color: white;
+}
+#About .itemBtn{
+    font-family: 'Open Sans';
+    transition: 0.5s all ease;
+    display: flex;
+    justify-content: space-around;
+}
+#About .readMore:hover{
+   background-color: rgb(239, 52, 58);
+   transition: 0.5s all ease;
+} 
+#About .col-lg-12 h1{
+    color: black;
+    font-size: 55px;
+}
+#About .col-lg-12 h2{
+    margin-top: 100px;
+    font-size: 45px;
+}
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+     right: 19px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.color-change{
+    background-color: black !important;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    top:0;
+}
+#return-to-top:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+#return-to-top:hover i {
+    color: #fff !important;
+    top: 5px;
+}
+.icons_social a:nth-child(2){
+    margin-right: 30px;
+}
+
+/* Extra Things */
+#About .col-lg-12 hr{
+    background: red;
+    width: 50px;
+    height: 1px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+#About .col-lg-12 p{
+    color: black;
+    margin-top: 30px;
+    text-align: center;
+}
+#About .itemBtn{
+    margin-bottom: 100px
+}
+#About .imgDivs{
+    margin-top: 80px;
+}
+#About .imgDivs .imgDivLeft{
+    margin-top: 30px;
+}
+#About img{
+    width: 100%;
+}
+ /* ABOUT SECTION ENDS */
+
+ /* TEA SECTION STARTS */
+#Tea{
+    background-image: url(../img/slider-bg3.jpg);
+    background-size:cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+#Tea .col-lg-12 .tasteOfMood{
+    color: white;
+    font-size: 45px;
+    margin: 0 auto;
+    margin-top: 200px;
+}
+#Tea .col-lg-12 h1{
+    font-size: 70px;
+    margin: 0 auto;
+}
+#Tea .col-lg-12 hr{
+    background: red;
+    width: 50px;
+    height: 1px;
+    margin: 0 auto;
+    margin-top: 30px;   
+    margin: 0 auto;
+    margin-top: 15px;
+}
+#Tea .col-lg-12 .itemBtn{
+    font-family: 'Open Sans';
+    transition: 0.5s all ease;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 45px;
+    margin-bottom: 100px;
+}
+.chooseTea{
+    border: none;
+    transition: 0.5s all ease;
+    padding: 12px 30px;
+    margin-top: 20px;
+    background-color: rgb(239, 52, 58);
+    color: white;
+}
+#Tea .chooseTea:hover{
+    background:black;
+    opacity: 0.5;
+    transition: 0.5s all ease;
+    color: red;
+ } 
+ /* TEA SECTION ENDS */
+
+ 
+ /* NEWS&OFFERS SECTION STARTS */
+ #News .col-lg-12 .NewsOffers1{
+    font-size: 45px;
+    margin: 0 auto;
+    margin-top: 100px;
+ }
+ #News .col-lg-12 .NewsOffers2{
+    font-size: 55px;
+    color: black;
+    margin: 0 auto;
+ }
+ #News hr{
+    background: red;
+    width: 50px;
+    height: 1px;
+    margin: 0 auto;
+    margin-top: 30px;   
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 45px;
+ }
+ #News .card{
+     overflow: hidden;
+     position: relative;
+     margin-bottom: 100px;
+     transition: 0.5s all ease;
+     border: none;
+ }
+ #News .card:hover{
+    -webkit-box-shadow: 3px 5px 11px -1px rgba(0,0,0,0.46);
+    -moz-box-shadow: 3px 5px 11px -1px rgba(0,0,0,0.46);
+    box-shadow: 3px 5px 11px -1px rgba(0,0,0,0.46);
+ }
+
+ #News .card-img-top{
+    transition: transform 1s, filter 1.5s ease-in-out;
+    transform-origin: center center;
+    filter: brightness(75%);
+    cursor: pointer;
+ }
+ #News .card-img-top:hover{
+    filter: brightness(105%);
+    transform: scale(1.1);
+ }
+ #News .card-title{
+     margin-top: 8px;
+     font-family: Open Sans;
+     font-size: 25px;
+     font-weight: bold;
+     cursor: pointer;
+     transition: 0.5s all ease;
+ }
+ #News .card-title:hover{
+     color: red;
+     opacity: 0.8;
+ }
+ #News .card-text{
+     color: black;
+     font-family: Open Sans;
+     font-size: 16px;
+ }
+ #News .text-muted{
+     font-family: Open Sans;
+ }
+ #News .card-footer i{
+     margin-right: 5px;
+ }
+
+ /* NEWS&OFFERS SECTION ENDS */
+
+
+
+
+
+/* FOOTER STARTS */
+footer{
+    height: 100px;
+    background: #222;
+    
+}
+
+
+footer  i{
+    margin-right: 25px;
+    font-size: 1.3em;
+    color: white;
+    
+}
+footer .col-lg-6 img{
+    width: 35px;
+    cursor: pointer;
+}
+footer .col-lg-6 i{
+    color: #fff;
+    transition: 0.3s linear;
+}
+
+footer .col-lg-6 i:hover{
+    color: red !important;
+
+}
+
+/* FOOTER ENDS */
+
+
+/* ABOUT PAGE */
+/* HEADER STARTS */
+#AboutHeader{
+    width: 100%;
+    background-image: url('../img/header-bg1.jpg');
+    background-size: cover;
+}
+#AboutHeader .row .col-12 h1{
+    margin-bottom: 130px;
+}
+/* HEADER ENDS */
+
+/* SECTION1 STARTS */
+#Section1{
+    background: rgba(34, 34, 34, 0.04);
+}
+#Section1 .col-lg-4 h5{
+    font-family: Open Sans;
+    font-weight: bold;
+    font-size: 32px;
+} 
+#Section1 .col-lg-4 p{
+    color: black;
+    font-family: Open Sans;
+    font-size: 17px;
+}
+/* SECTION1 ENDS */
+
+/* CUSTOM SECTION STARTS */
+#Custom .col-lg-4 img{
+    width: 50px;
+    margin-top: 90px;
+}
+#Custom .col-lg-4 h5{
+    font-family: 'Amatic SC';
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+#Custom .col-lg-4 p{
+    color: black;
+    font-family: Open Sans;
+    margin-top: 15px;
+    margin-bottom: 90px;
+}
+/* CUSTOM SECTION STARTS */
+
+/* GALLERY SECTION STARTS  */
+
+#Gallery .col-lg-12 .col-lg-4 img{
+    width: 100%;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+
+/* GALLERY SECTION STARTS  */
+
+/* RESERVE SECTION STARTS (2) */
+#Reserve2{
+    background-image: url(../img/slider-bg2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 30px;
+}
+#Reserve2 .col-lg-12 h4,h1{
+    color: white;
+    text-align: center;
+}
+#Reserve2  .col-lg-12 .phone2{
+    margin-top: 220px;
+    font-size: 50px;
+}
+#Reserve2 .col-lg-12 .ReserveTitle2{
+    font-size: 75px;
+}
+#Reserve2 .col-lg-12 .ReserveHr2{
+    background: red;
+    width: 50px;
+    height: 1px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+#Reserve2 .itemBtn{
+    font-family: 'Open Sans';
+    transition: 0.5s all ease;
+    display: flex;
+    justify-content: space-around;
+}
+
+#Reserve2 .col-lg-12 .showAllMenu2{
+    border: none;
+    transition: 0.5s all ease;
+    padding: 12px 30px;
+    margin-bottom: 150px;
+    margin-top: 60px;
+    background: rgb(239, 52, 58);
+    color: white;
+}
+#Reserve2 .col-lg-12 .showAllMenu2:hover{
+   background-color: black;
+   color: red;
+   opacity: 0.7;
+   transition: 0.5s all ease;
+}
+
+/* RESERVE SECTION ENDS (2) */
+
+/* END OF ABOUT PAGE */
+
+/* MENU PAGE STARTS */
+/* LOOK AT SECTION STARTS */
+#LookAt{
+    background: rgba(34, 34, 34, 0.04);
+}
+#LookAt .col-lg-12 h3{
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+/* LOOK AT SECTION ENDS */
+
+/* NEMAS SECTION STARTS  */
+#Nemas{
+    background: url("../img/slider-bg5.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+#Nemas .col-lg-12 h5{
+    font-family: 'Amatic SC';
+    font-size: 100px;
+    color: white;
+    margin-top: 200px;
+}
+#Nemas .col-lg-12 p{
+    font-family: Open Sans;
+    font-size: 25px;
+}
+#Nemas .col-lg-12 hr{
+    background: red;
+    width: 50px;
+    height: 1px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 200px;
+    margin-top: 30px;
+
+}
+/* NEMAS SECTION ENDS  */
+
+/* ROLLS SECTION STARTS */
+#Rolls{
+    background: url("../img/slider-bg4.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+#Rolls .col-lg-12 h5{
+    font-family: 'Amatic SC';
+    font-size: 100px;
+    color: white;
+    margin-top: 200px;
+}
+#Rolls .col-lg-12 p{
+    font-family: Open Sans;
+    font-size: 25px;
+}
+#Rolls .col-lg-12 hr{
+    background: red;
+    width: 50px;
+    height: 1px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 200px;
+    margin-top: 30px;
+
+}
+/* ROLLS SECTION ENDS */
+/* MENU PAGE ENDS */
+
+/* RESERVATION PAGE STARTS */
+
+/* JOIN US SECTION STARTS */
+#JoinUs .col-lg-4 h5{
+    font-family: 'Amatic SC';
+    color: red;
+    font-size: 52px;
+    margin-top: 80px;
+}
+#JoinUs .col-lg-4 p{
+    color: black;
+    font-size: 18px;
+    margin-bottom: 90px;
+    margin-top: 12px;
+}
+#JoinUs .col-lg-4 a{
+    margin-bottom: 90px;
+    transition: 0.3s linear;
+
+}
+#JoinUs .col-lg-4 a i{
+    font-size: 23px;
+    margin-top: 5px;
+}
+#JoinUs .col-lg-4 a:hover{
+    color: red;
+    
+}
+/* JOIN US SECTION ENDS */
+
+/* RESERVE TABLE SECTION STARTS */
+#ReserveTable{
+    background-color: rgba(34, 34, 34, 0.04);
+}
+#ReserveTable h5{
+    font-family: 'Amatic SC';
+    font-size: 50px;
+    margin-top: 80px;
+}
+#ReserveTable h1{
+    color: black;
+    font-size: 60px;
+}
+#ReserveTable hr{
+    background: red;
+    width: 50px;
+    height: 1px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+/* RESERVE TABLE SECTION ENDS */
+
+/* RESERVATION PAGE ENDS */
+
+/* CONTACT PAGE STARTS */
+/* SEC3 STARTS */
+#Sec3 .col-lg-6 h3{
+font-size: 35px;
+font-weight: bold;
+margin-top: 5px;
+}
+#Sec3 .col-lg-6 p{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 90px;
+}
+#Sec3 .col-lg-6 img{
+    margin-bottom: 90px;
+}
+/* SEC3 ENDS */
+/* CONTACT PAGE ENDS */
+
+
+/*CARD1 PAGE STARTS */
+/* CARD1 SECTION STARTS */
+#Card1Head  .col-lg-12 h1{
+color: black;
+font-family: Open Sans;
+font-size: 50px;
+font-weight: bold;
+margin-top: 30px;
+}
+#Card1Head  .col-lg-12 .text-muted{
+    font-size: 17px;
+}
+#Card1Head  .col-lg-12 img{
+    width:80%;
+    margin-top: 25px;
+}
+/* CARD1 SECTION ENDS */
+
+/* CONTENT SECTION STARTS */
+#Content .col-lg-12 h3{
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Open Sans;
+    color: black;
+    margin-top: 25px; 
+}
+#Content .col-lg-12 p{
+    color: black;
+    font-family: Open Sans;
+    font-size: 17px;
+    margin-bottom: 50px;
+}
+/* CONTENT SECTION ENDS */
+
+/* AUTHOR SECTION STARTS */
+#Author{
+    background-color: rgba(34, 34, 34, 0.04);
+}
+#Author .col-lg-12 img{
+    margin-top: 30px;
+}
+#Author .col-lg-12 h3{
+    font-size: 40px;
+    font-family: Open Sans;
+    color: black;
+    margin-top: 25px; 
+    margin-bottom: 20px;
+}
+#Author .col-lg-12 p{
+    color: black;
+    font-family: Open Sans;
+    font-size: 17px;
+    margin-bottom: 40px;
+}
+/* AUTHOR SECTION ENDS */
+
+/* RELATED POSTS SECTION STARTS */
+#RelatedPosts .col-lg-4 .card{
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+#RelatedPosts .col-lg-4 .card p{
+    color: black;
+}
+/* RELATED POSTS SECTION ENDS */
+
+/* CARD1 PAGE ENDS */
